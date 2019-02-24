@@ -4,19 +4,37 @@
     <title>Sample</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style type="text/css">
     	.content-container{
     		padding: 20px 50px 50px 50px;
     	}
     	.topbar {
-    		height: 70px;
+    		height: 50px;
 		  	overflow: hidden;
+		  	background-color: #212529;
 		}
 		.topbar h1 {
 		  float: left;
 		  text-align: center;
 		  text-decoration: none;
 		  font-family: Georgia, serif;
+		  padding: 10px 0px 10px 50px;
+		  color: white;
+		  font-size: 15px;
+		}
+		.wrapper {
+			display: grid;
+			grid-template-columns: 720px 350px;
+			grid-gap: 10px;
+			.paragraph {
+				grid-row: 1;
+				grid-column: 1
+			}
+			.image {
+				grid-row: 1;
+				grid-column: 2
+			}
 		}
 		p {
 			font: 15px arial, sans-serif;
@@ -56,14 +74,19 @@
 		}
 	</style>
 </head>
-<body>
+<body style="margin: 0;">
+	<div class='topbar'>
+		   <h1>Code for Fun Demo Page <i class='fas fa-smile-wink'></i></h1>
+	</div>
 	<div class='content-container'>
-		<div class="topbar">
-		   <h1>Code for Fun Demo Page</h1>
-		</div>
-		<h2>My Amazing Smart Home</h2>
+		<h2>My Amazing Smart Home <i class='fas fa-home'></i></h2>
 		<h3>Project Introduction</h3>
-		<p style="font-style: italic;">SMART home technology use devices connected to the Internet of things (IoT) to automate and monitor in-home systems.[1] It stands for Self-Monitoring Analysis and Reporting Technology. The technology was originally developed by IBM and was referred to as Predictive failure analysis.[2] <br>The first contemporary SMART home technology products became available to consumers between 1998 and the early 2000s.[3] SMART home technology allows users to control and monitor their connected home devices from SMART home apps, smartphones, or other networked devices.[4] Users can remotely control connected home systems whether they are home or away. <br>This allows for more efficient energy and electric use as well as ensuring your home is secure. SMART home technology contributes to health and well-being enhancement by accommodating people with special needs, especially older people [5][6][7]. <br>SMART home technology is now being used to create SMART cities.[8] A Smart city functions similar to a SMART home, where systems are monitored to more efficiently run the cities and save money. (from <a href="https://en.wikipedia.org/wiki/SMART_home_technology">Wikipedia<a>)</p>
+		<div class='wrapper'>
+			<div class='paragraph'>
+				<p style="font-style: italic;">SMART home technology use devices connected to the Internet of things (IoT) to automate and monitor in-home systems.[1] It stands for Self-Monitoring Analysis and Reporting Technology. The technology was originally developed by IBM and was referred to as Predictive failure analysis.[2] <br>The first contemporary SMART home technology products became available to consumers between 1998 and the early 2000s.[3] SMART home technology allows users to control and monitor their connected home devices from SMART home apps, smartphones, or other networked devices.[4] Users can remotely control connected home systems whether they are home or away. <br>This allows for more efficient energy and electric use as well as ensuring your home is secure. SMART home technology contributes to health and well-being enhancement by accommodating people with special needs, especially older people [5][6][7]. <br>SMART home technology is now being used to create SMART cities.[8] A Smart city functions similar to a SMART home, where systems are monitored to more efficiently run the cities and save money. (from <a href="https://en.wikipedia.org/wiki/SMART_home_technology">Wikipedia<a>)</p>
+			</div>
+			<div class='image'><img src='smart-home.png' style="width:350px;height:250px;"></div>
+		</div>
 		<h3>Project Goals</h3>
 		<ul>
 			<li>Voice Controlled Television</li>
@@ -74,10 +97,10 @@
 		<h3>Teammates Introduction</h3>
 		<p>These are my teammates: XXX, XXX, XXX ...</p>
 		<div class='grid-container'>
-			<div class="img-box a"><img src='1.jpg' style="width:730px;height:300px;"></div>
-			<div class="img-box b"><img src='4.jpg' style="width:360px;height:614px;"></div>
-			<div class="img-box c"><img src='2.jpg' style="width:360px;height:300px;"></div>
-			<div class="img-box d"><img src='3.jpg' style="width:360px;height:300px;"></div>
+			<div class='img-box a'><img src='1.jpg' style="width:730px;height:300px;"></div>
+			<div class='img-box b'><img src='4.jpg' style="width:360px;height:614px;"></div>
+			<div class='img-box c'><img src='2.jpg' style="width:360px;height:300px;"></div>
+			<div class='img-box d'><img src='3.jpg' style="width:360px;height:300px;"></div>
 		</div>
 		<h3>Design Process (embeded Youtube Video)</h3>
 		<p>Computer Science is Changing Everything</p>
