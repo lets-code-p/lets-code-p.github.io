@@ -4,9 +4,86 @@
     <title>Sample</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    	.content-container{
+    		padding: 20px 50px 50px 50px;
+    	}
+    	.topbar {
+    		height: 70px;
+		  	overflow: hidden;
+		}
+		.topbar h1 {
+		  float: left;
+		  text-align: center;
+		  text-decoration: none;
+		  font-family: Georgia, serif;
+		}
+		p {
+			font: 15px arial, sans-serif;
+			padding-left: 20px;
+		}
+		.video {
+			padding: 20px;
+		}
+		h3 {
+			padding-left: 10px;
+		}
+		.grid-container {
+			display: grid;
+			padding-left: 20px;
+		    grid-gap: 10px;
+		        grid-template-columns: 360px 360px 360px;
+		    }
+		    .img-box {
+		        border-radius: 5px;
+		    }
+		    .a {
+		        grid-column: 1 / 3;
+		        grid-row: 1;
+		    }
+		    .b {
+		        grid-column: 3 ;
+		        grid-row: 1 / 3;
+		    }
+		    .c {
+		        grid-column: 1 ;
+		        grid-row: 2 ;
+		    }
+		    .d {
+		        grid-column: 2;
+		        grid-row: 2;
+		    }
+		}
+	</style>
 </head>
 <body>
-    <h1>Sample Page</h1>
-    <p>Let's Code!</p>
+	<div class='content-container'>
+		<div class="topbar">
+		   <h1>Code for Fun Demo Page</h1>
+		</div>
+		<h2>My Amazing Smart Home</h2>
+		<h3>Project Introduction</h3>
+		<p style="font-style: italic;">SMART home technology use devices connected to the Internet of things (IoT) to automate and monitor in-home systems.[1] It stands for Self-Monitoring Analysis and Reporting Technology. The technology was originally developed by IBM and was referred to as Predictive failure analysis.[2] <br>The first contemporary SMART home technology products became available to consumers between 1998 and the early 2000s.[3] SMART home technology allows users to control and monitor their connected home devices from SMART home apps, smartphones, or other networked devices.[4] Users can remotely control connected home systems whether they are home or away. <br>This allows for more efficient energy and electric use as well as ensuring your home is secure. SMART home technology contributes to health and well-being enhancement by accommodating people with special needs, especially older people [5][6][7]. <br>SMART home technology is now being used to create SMART cities.[8] A Smart city functions similar to a SMART home, where systems are monitored to more efficiently run the cities and save money. (from <a href="https://en.wikipedia.org/wiki/SMART_home_technology">Wikipedia<a>)</p>
+		<h3>Project Goals</h3>
+		<ul>
+			<li>Voice Controlled Television</li>
+			<li>Voice Controlled Lights</li>
+			<li>Smart Energy Control</li>
+			<li>...</li>
+		</ul>
+		<h3>Teammates Introduction</h3>
+		<p>These are my teammates: XXX, XXX, XXX ...</p>
+		<div class='grid-container'>
+			<div class="img-box a"><img src='1.jpg' style="width:730px;height:300px;"></div>
+			<div class="img-box b"><img src='4.jpg' style="width:360px;height:614px;"></div>
+			<div class="img-box c"><img src='2.jpg' style="width:360px;height:300px;"></div>
+			<div class="img-box d"><img src='3.jpg' style="width:360px;height:300px;"></div>
+		</div>
+		<h3>Design Process (embeded Youtube Video)</h3>
+		<p>Computer Science is Changing Everything</p>
+		<div class='video'>
+			<iframe width="1100" height="800" src="https://www.youtube.com/embed/QvyTEx1wyOY"></iframe>
+		</div>
+	</div>
 </body>
 </html>
