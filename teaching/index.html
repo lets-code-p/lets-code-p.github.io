@@ -5,13 +5,14 @@ title: Pi Workshop - teaching material
 
 <div class="home">
     <h2>Teaching Material</h2>
-    <ul style="list-style-type: none; font-size:1.2em">
+    {% include toc.html html=content sanitize=true class="inline_toc"%}
+    <ul class="inline_toc" style="list-style-type: none; font-size:1.2em">
         <li><p>Complete notes</p></li>
         <li><a href="./Notes/Pi_Workshop.pdf">Pi_Workshop.pdf</a></li>
         <li><a href="./Notes/Pi_Workshop.pptx">Pi_Workshop.pptx</a></li>
         <li><a href="./Notes/Pi_Workshop.key">Pi_Workshop.key</a></li>
     </ul>
-    <ul style="list-style-type: none; font-size:1.2em">
+    <ul class="inline_toc" style="list-style-type: none; font-size:1.2em">
         <li><p>Run code on Pi</p></li>
         <li>Download code: <a href="./code/helloworld.py">helloworld.py</a></li>
         <br><br>
@@ -44,5 +45,9 @@ title: Pi Workshop - teaching material
         <li><img class="schematic" src="./schematics/fourDigit.png"></li>
         <li>Download code: <a href="./code/fourDigit.py">fourDigit.py</a></li>
         <br>
+    </ul>
+     <ul>
+        <li><p id="my_toc">Resources</p></li>
+        <li>Resistor Color Coding</li>
     </ul>
 </div>
